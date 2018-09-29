@@ -1,8 +1,12 @@
 import {printToDom} from '../helpers/util.js';
-import {multiply} from '../helpers/maths.js';
-import {divide} from '../helpers/maths.js';
-import {add} from '../helpers/maths.js';
-import {subtract} from '../helpers/maths.js';
+import {multiply, divide, add, subtract} from '../helpers/maths.js';
+
+const calc = {
+    firstNumber: '',
+    secondNumber: '',
+    mathType: '',
+    display: ''
+};
 
 const calculate = (num1, num2, mathType) => {
     let answer = 0;
@@ -17,12 +21,31 @@ const calculate = (num1, num2, mathType) => {
             answer = add(num1, num2);
             break;
         case 'subtract':
-            answer =  subtract(num1, num2);
+            answer = subtract(num1, num2);
             break;
         default:
             answer = 'try again';
     }
-    printToDom(answer, 'result');
+    setDisplay(answer);
 };
 
-export {calculate};
+const setDisplay = (someNumber) => {
+    calc.display = someNumber;
+    printToDom(calc.display, 'result');
+};
+
+const initialDisplay = () => {
+    printToDom(0, 'result');
+};
+
+const addNumber = (num) => {
+    if(calc.mathType === '') {
+        calc.firstNumber +=num;
+        setDisplay(calc.firstNumber);
+    } else {
+        calc.secondNumber +=num;
+        setDisplay(calc.secondNumber);
+    }
+};
+
+export {calculate, addNumber, initialDisplay};
