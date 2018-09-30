@@ -1,4 +1,4 @@
-import {addNumber} from '../components/calculator.js';
+import {setMathType, addNumber, calculate} from '../components/calculator.js';
 
 const sevenButton = document.getElementById('sevenButton');
 const eightButton = document.getElementById('eightButton');
