@@ -1,0 +1,13 @@
+.calculator {
+    background-color: #111;
+}
+
+#oneButton, #twoButton, #threeButton, #fourButton, #fiveButton, #sixButton, #sevenButton, #eightButton, #nineButton, #zeroButton, #equalButton {
+    color: teal;
+}
+
+#result {
+    color: lightgray;
+    text-align: right;
+    float: right;
+}
