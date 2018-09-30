@@ -8,6 +8,9 @@
 
 #result {
     color: lightgray;
-    text-align: right;
-    float: right;
+    font-family: 'Orbitron', sans-serif;
+}
+
+#container {
+    margin-top: 30px;
 }
