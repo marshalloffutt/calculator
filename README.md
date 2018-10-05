@@ -1,6 +1,6 @@
 # Calculator
 
-One stop shop for all of your One Hundred Years of Solitude needs!
+A barely-functioning calculator app.
 
 ## Screenshots
 ![main screen shot](./screenshots/pic.png)
