@@ -7,6 +7,7 @@ This was an in-class code-along exercise where we built a barely-functioning cal
 ![main screen shot](./screenshots/pic.png)
 
 ## How to run this project
+* Clone this repository to your local machine.
 * Use npm to install http-server in your terminal:
 ```sh
 npm install -g http-server
@@ -19,4 +20,3 @@ hs -p 9999
 ```
 localhost: 9999
 ```
-
