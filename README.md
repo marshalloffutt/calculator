@@ -1,6 +1,7 @@
 # Calculator
 
-A barely-functioning calculator app.
+## Description
+This was an in-class code-along exercise where we built a barely-functioning calculator app using vanilla JavaScript, ES6 modules, and Bootstrap.
 
 ## Screenshots
 ![main screen shot](./screenshots/pic.png)
@@ -18,4 +19,4 @@ hs -p 9999
 ```
 localhost: 9999
 ```
-* Do some very light calculator input. Otherwise you will break it. It is very fickle. But it kind of works.
+
